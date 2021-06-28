@@ -107,11 +107,15 @@ img{
 
 }
 
+
 .menu:hover,
 .menu:focus{
       color: var( --akcent-color );
 }
+ .current {
+      color: var( --akcent-color );
 
+ }
 .list .menu{
   display: flex;
   align-items: center;
@@ -208,9 +212,16 @@ img{
 
 .works-list{
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: -30px;
+      margin-left: -30px;
       
+}
+.works-list-box{
+      margin-top: 30px;
+      margin-left: 30px;
+      flex-basis: calc((100% - 90px) / 3 );
+
 }
 
 .works-title{
@@ -227,10 +238,16 @@ img{
       margin: -1px;
 }
 .advantage{
-      display: flex;
-      padding-top: 94px;
-     
-      justify-content: space-between;
+      display: flex;     
+      flex-wrap: wrap;
+      margin-top: -30px;
+      margin-left: -30px;
+
+}
+.advantage-box {
+      margin-top: 30px;
+      margin-left: 30px;
+      flex-basis: calc((100% - 120px) / 4 );
 
 }
 
@@ -278,7 +295,7 @@ img{
 
 
 .development-title{
-     padding-bottom: 50px;
+      margin-bottom: 50px;
 }
 
 .team-list {
@@ -290,9 +307,7 @@ img{
       text-align: center;
       letter-spacing: 0.03em;
       color: #212121;
-
-      margin-top: 30px;
-
+      margin-bottom: 10px;
 }
 .position {
       font-style: normal;
@@ -302,8 +317,6 @@ img{
       text-align: center;
       letter-spacing: 0.03em;
       color: #757575;
-      margin-top: 10px;
-      margin-bottom: 30px;
 }
 
 .development-team{
@@ -324,6 +337,9 @@ img{
       border-radius: 0px 0px 4px 4px;
 
 
+}
+.box-formatting{
+      padding: 30px;
 }
 /* ==========FOOTER========== */
 .contacts-footer{
@@ -408,6 +424,7 @@ img{
       color: #212121;
       border: none;
       cursor: pointer;
+      padding: 6px 22px;
 }
 
 .sorting:hover,
@@ -425,8 +442,7 @@ img{
       line-height: 2;
       letter-spacing: 0.06em;
       color: #212121;
-      padding-top: 20px;
-      margin-left: 24px;
+      
 }
 .service-list{
       font-family: Roboto;
@@ -436,8 +452,7 @@ img{
       line-height: 1.88;
       letter-spacing: 0.03em;
       color: #757575;
-      margin-top: 4px;
-      margin-left: 24px;
+      
       
 
 }
@@ -447,9 +462,9 @@ img{
       justify-content: center;
       margin-left: auto;
       margin-right: auto;
-      padding-bottom: 20px;
-      margin-bottom: 34px;
+      margin-bottom: 50px;
 }
+
 
 .sorting-element:not(:last-child){
       margin-right: 8px;
@@ -479,5 +494,5 @@ img{
       border-left: 1px solid #EEEEEE; 
       border-right: 1px solid #EEEEEE;
       border-bottom: 1px solid #EEEEEE;
-      padding-bottom: 20px;
+      padding: 20px 24px;
 }
